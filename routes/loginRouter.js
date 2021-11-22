@@ -18,7 +18,7 @@ const loginValidations = [
   verifyPasswordIsValid];
 
 router.post('/', loginValidations, async (_req, res) => {
-  res.status(200).json({ token: generateToken() }); // Espera retornar o token.
+  res.status(200).json({ token: generateToken() });
 });
 
 module.exports = router;
